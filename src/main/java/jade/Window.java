@@ -3,7 +3,6 @@ package jade;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
-import org.lwjgl.system.Configuration;
 
 import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
 import static org.lwjgl.glfw.GLFW.*;
@@ -29,8 +28,6 @@ public class Window {
         }
 
         return Window.window;
-
-
     }
 
     public void  run(){
@@ -113,7 +110,6 @@ public class Window {
             if (KeyListener.isKeyPressed(GLFW_KEY_SPACE)){
                 System.out.println("Space key is pressed");
             }
-
 
             glfwSwapBuffers(glfwWindow);
 
