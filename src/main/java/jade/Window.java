@@ -145,9 +145,6 @@ public class Window {
                 currentScene.update(dt);
             }
 
-            if (KeyListener.isKeyPressed(GLFW_KEY_SPACE)){
-                System.out.println("Space key is pressed");
-            }
 
             glfwSwapBuffers(glfwWindow);
 
